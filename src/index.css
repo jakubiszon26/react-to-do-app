@@ -3,6 +3,7 @@
   padding: 0px;
 }
 body {
+  display: block;
   background: rgb(2, 7, 69);
   background: -moz-linear-gradient(
     159deg,
@@ -32,6 +33,8 @@ body {
 }
 .header {
   position: relative;
+  height: 50vh;
+  width: 100%;
 }
 .header-heading {
   left: 50%;
@@ -45,7 +48,19 @@ body {
   animation: slideFromLeft;
   animation-duration: 1s;
 }
-
+.card {
+  width: 20vw;
+  min-height: 50vh;
+  background-color: #F0F8FF;
+  border-radius: 15px;
+  margin: 30px;
+  color: black;
+}
+.cardsList {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
 @keyframes heading-left {
   0% {
     opacity: 0%;

@@ -1,9 +1,9 @@
 import React from 'react'
-import Card from './Card'
+import CardList from './CardList'
 export default function DashBoard() {
     return (
         <div>
-            <Card />
+            <CardList />
         </div>
     )
 }
