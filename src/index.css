@@ -49,12 +49,17 @@ body {
   animation-duration: 1s;
 }
 .card {
-  width: 20vw;
+  min-width: 300px;
+  width: 20vh;
   min-height: 50vh;
   background-color: #f0f8ff;
   border-radius: 15px;
   margin: 30px;
   color: black;
+  animation: CardReveal 1s;
+  -webkit-box-shadow: -4px 10px 26px 12px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -4px 10px 26px 12px rgba(0, 0, 0, 0.75);
+  box-shadow: -4px 10px 26px 12px rgba(0, 0, 0, 0.75);
 }
 .cardsList {
   display: flex;
@@ -62,6 +67,10 @@ body {
   width: 100%;
   align-items: center;
   justify-content: center;
+}
+.card-ul {
+  text-align: center;
+  list-style: none;
 }
 @keyframes heading-left {
   0% {
@@ -83,5 +92,14 @@ body {
   100% {
     opacity: 100%;
     left: 50%;
+  }
+}
+
+@keyframes CardReveal {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
   }
 }
