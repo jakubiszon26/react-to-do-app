@@ -94,14 +94,16 @@ li {
 }
 .add-task-button {
   width: 90%;
-  height: 50px;
-  margin: 5%;
-  position: absolute;
-  bottom: 0;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
   background-color: #3bb78f;
   background-image: linear-gradient(315deg, #3bb78f 0%, #0bab64 74%);
+  margin-top: 2.5%;
+  height: 50px;
   border-radius: 15px;
   color: white;
+  border: none none none;
+  margin-bottom: 5px;
 }
 .item-text {
   position: absolute;
@@ -111,6 +113,7 @@ li {
 }
 .card-button {
   display: block;
+  text-align: center;
 }
 .add-input {
   width: 90%;
