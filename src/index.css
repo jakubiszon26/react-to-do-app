@@ -89,6 +89,8 @@ li {
   margin-right: 2.5%;
   height: 50px;
   background-color: lightgray;
+  border-radius: 10px;
+  position: relative;
 }
 .add-task-button {
   width: 90%;
@@ -101,8 +103,34 @@ li {
   border-radius: 15px;
   color: white;
 }
+.item-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 .card-button {
   display: block;
+}
+.add-input {
+  width: 90%;
+  border-radius: 10px;
+}
+
+.submit-button {
+  width: 90%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  background-color: #2a2a72;
+  background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+  margin-top: 2.5%;
+  height: 50px;
+  border-radius: 15px;
+  color: white;
+  border: none none none;
+}
+.add-new-task-form {
+  text-align: center;
 }
 @keyframes heading-left {
   0% {
