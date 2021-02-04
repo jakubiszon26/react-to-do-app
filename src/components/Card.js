@@ -12,7 +12,7 @@ export default function Card({ data }) {
       <ul className="card-ul">
         {data.tasks.map((item) => (
           <li key={item.id}>
-            <Item>{item.title}</Item>
+            <Item isFinished={item.isFinished} title={item.title} data={data} item={item} id={item.id}>{item.title}</Item>
           </li>
         ))}
       </ul>
@@ -25,7 +25,13 @@ export default function Card({ data }) {
             Add task
           </button>
         )}
-        {state.clicked && <AddNewTaskForm data={data} setCardState={setState} cardState={state} />}
+        {state.clicked && (
+          <AddNewTaskForm
+            data={data}
+            setCardState={setState}
+            cardState={state}
+          />
+        )}
       </div>
     </div>
   );
