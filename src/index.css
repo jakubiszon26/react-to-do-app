@@ -93,6 +93,7 @@ li {
   position: relative;
   border: none;
   cursor:grab;
+  text-decoration-thickness: 4px;
 }
 .item:focus {
   width: 95%;
