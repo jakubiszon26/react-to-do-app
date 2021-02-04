@@ -5,7 +5,7 @@ export default function Item(props) {
   const [finishedState, setFinishedState] = useState(false);
   const isFinished = props.isFinished;
   useEffect(() => {
-    setFinishedState(isFinished)
+    setFinishedState(isFinished);
   }, []);
 
   return (

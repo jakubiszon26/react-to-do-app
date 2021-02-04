@@ -12,7 +12,15 @@ export default function Card({ data }) {
       <ul className="card-ul">
         {data.tasks.map((item) => (
           <li key={item.id}>
-            <Item isFinished={item.isFinished} title={item.title} data={data} item={item} id={item.id}>{item.title}</Item>
+            <Item
+              isFinished={item.isFinished}
+              title={item.title}
+              data={data}
+              item={item}
+              id={item.id}
+            >
+              {item.title}
+            </Item>
           </li>
         ))}
       </ul>

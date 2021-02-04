@@ -18,6 +18,7 @@ export default function AddNewTaskForm({ data, setCardState, cardState }) {
   );
 }
 const handleChange = (event, setText) => {
+  //set text hook to input value
   setText(event.target.value);
 };
 const handleSubmit = (data, text, setCardState, cardState) => {
@@ -26,6 +27,7 @@ const handleSubmit = (data, text, setCardState, cardState) => {
     title: text,
   });
   setCardState({
+    //set clicked to false after finished task addition in purpose to hide add new task form component
     clicked: !cardState.clicked,
   });
 };
