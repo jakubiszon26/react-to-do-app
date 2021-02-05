@@ -2,7 +2,9 @@ import React, { useState } from "react";
 import AddNewTaskForm from "./AddNewTaskForm";
 import Item from "./Item";
 
-export default function Card({ data }) {
+export default function Card({ data, cardId }) {
+  console.log("id karty")
+  console.log(cardId)
   const [state, setState] = useState({
     clicked: false,
   });
@@ -19,6 +21,7 @@ export default function Card({ data }) {
               item={item}
               id={item.id}
             >
+  
               {item.title}
             </Item>
           </li>
@@ -38,8 +41,9 @@ export default function Card({ data }) {
             data={data}
             setCardState={setState}
             cardState={state}
+            cardId={data.id}
           />
-        )}
+        )} 
       </div>
     </div>
   );
