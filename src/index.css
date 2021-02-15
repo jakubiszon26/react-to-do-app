@@ -92,7 +92,7 @@ li {
   border-radius: 10px;
   position: relative;
   border: none;
-  cursor:grab;
+  cursor: grab;
   text-decoration-thickness: 4px;
 }
 .item:focus {
@@ -104,7 +104,7 @@ li {
   border-radius: 10px;
   position: relative;
   border: none;
-  cursor:grab;
+  cursor: grab;
   border: none;
   outline: none;
 }
@@ -156,6 +156,23 @@ li {
   background-color: #2a2a72;
   background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
   margin-top: 2.5%;
+  height: 50px;
+  border-radius: 15px;
+  color: white;
+  border: none none none;
+}
+.cancel-button {
+  width: 90%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  background: rgb(131, 58, 180);
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 44%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  margin-top: 5px;
   height: 50px;
   border-radius: 15px;
   color: white;

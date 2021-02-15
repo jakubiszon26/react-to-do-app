@@ -14,6 +14,12 @@ export default function AddNewTaskForm({ data, setCardState, cardState }) {
       >
         Accept
       </button>
+      <button
+        onClick={() => setCardState({ clicked: false })}
+        className="cancel-button"
+      >
+        Cancel
+      </button>
     </div>
   );
 }
