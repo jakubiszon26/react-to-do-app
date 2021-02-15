@@ -1,4 +1,4 @@
-#  TO DO:
-  - Finish task
-  - mysql databse
-  - create new Cards
+# Simple to do app
+
+<img src="./demo/todogif.gif" alt="presentation" />
+
