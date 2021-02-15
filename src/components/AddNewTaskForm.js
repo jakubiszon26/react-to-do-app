@@ -30,5 +30,4 @@ const handleSubmit = (data, text, setCardState, cardState) => {
     //set clicked to false after finished task addition in purpose to hide add new task form component
     clicked: !cardState.clicked,
   });
-  fetch(`http://localhost:8000/add?text="${text}"&cardId=${data.id}`)
 };
